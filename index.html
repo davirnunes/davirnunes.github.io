@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Rodrigues Nunes — Ciência de Dados & Engenharia de Software</title>
+    <meta name="description" content="Portfólio de Davi Rodrigues Nunes, estudante de Engenharia de Software na UnB com foco em Ciência de Dados, BI e Machine Learning.">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/166925269?v=4">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#14182B',
+                        paper: '#F5F5F1',
+                        signal: '#E2A63B',
+                        graph: '#1F6B67',
+                        muted: '#5B6472',
+                        line: '#DEDAD1',
+                    },
+                    fontFamily: {
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        body: ['"IBM Plex Sans"', 'sans-serif'],
+                        mono: ['"IBM Plex Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            * { animation: none !important; transition: none !important; }
+        }
+        h1, h2, h3, h4, .font-display { font-family: 'Space Grotesk', sans-serif; }
+        .data-label { font-family: 'IBM Plex Mono', monospace; }
+        ::selection { background: #E2A63B; color: #14182B; }
+        a:focus-visible, button:focus-visible { outline: 2px solid #1F6B67; outline-offset: 3px; }
+        .tick { position: relative; padding-left: 14px; }
+        .tick::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 8px; height: 1px; background: #1F6B67; }
+        .skill-tag { display: inline-block; padding: 0.4rem 0.9rem; border: 1px solid #DEDAD1; border-radius: 999px; font-size: 0.8125rem; color: #14182B; background: #fff; }
+        .skill-tag-sm { display: inline-block; padding: 0.3rem 0.75rem; border: 1px solid #DEDAD1; border-radius: 999px; font-size: 0.75rem; color: #5B6472; }
+    </style>
+</head>
+<body class="bg-paper text-ink font-body antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-paper/90 backdrop-blur-sm border-b border-line z-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#inicio" class="font-display font-semibold text-lg">Davi Nunes</a>
+                <div class="hidden md:flex gap-8 text-sm text-muted">
+                    <a href="#sobre" class="hover:text-ink transition-colors">Sobre</a>
+                    <a href="#habilidades" class="hover:text-ink transition-colors">Habilidades</a>
+                    <a href="#projetos" class="hover:text-ink transition-colors">Projetos</a>
+                    <a href="#contato" class="hover:text-ink transition-colors">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="inicio" class="pt-36 pb-24 px-6 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_260px] gap-16 items-start">
+        <div>
+            <h1 class="text-4xl md:text-5xl font-semibold leading-[1.15] mb-6 max-w-xl">
+                Ciência de Dados, construída sobre fundamentos de engenharia.
+            </h1>
+            <p class="text-lg text-muted leading-relaxed mb-8 max-w-md">
+                Sou o Davi, estudante de Engenharia de Software na UnB migrando o foco para Ciência de Dados e BI. Uso C, SQL e algoritmos de grafos como a base que sustenta esse trabalho — não como um desvio dele.
+            </p>
+            <div class="flex flex-wrap gap-4 mb-10">
+                <a href="#projetos" class="bg-ink text-paper px-6 py-3 text-sm font-medium hover:bg-graph transition-colors">Ver projetos</a>
+                <a href="https://linkedin.com/in/davi-r-8717101b6" target="_blank" class="border border-line px-6 py-3 text-sm font-medium hover:border-ink transition-colors">LinkedIn</a>
+            </div>
+            <dl class="flex flex-wrap gap-x-8 gap-y-3 data-label text-sm text-muted border-t border-line pt-6">
+                <div class="tick"><dt class="inline">semestre </dt><dd class="inline text-ink">6º</dd></div>
+                <div class="tick"><dt class="inline">repositórios </dt><dd class="inline text-ink">17 públicos</dd></div>
+                <div class="tick"><dt class="inline">foco </dt><dd class="inline text-ink">BI & Machine Learning</dd></div>
+            </dl>
+        </div>
+        <div class="max-w-[220px] mx-auto md:max-w-none md:mx-0">
+            <div class="border border-line p-2">
+                <img src="https://avatars.githubusercontent.com/u/166925269?v=4" alt="Davi Rodrigues Nunes" class="w-full aspect-square object-cover">
+            </div>
+            <svg viewBox="0 0 260 90" class="mt-4 w-full" aria-hidden="true">
+                <line x1="10" y1="80" x2="10" y2="10" stroke="#DEDAD1" stroke-width="1"/>
+                <line x1="10" y1="80" x2="250" y2="80" stroke="#DEDAD1" stroke-width="1"/>
+                <line x1="30" y1="68" x2="235" y2="14" stroke="#E2A63B" stroke-width="1.5" stroke-dasharray="2 3"/>
+                <circle cx="40" cy="60" r="3" fill="#1F6B67"/>
+                <circle cx="70" cy="50" r="3" fill="#1F6B67"/>
+                <circle cx="95" cy="55" r="3" fill="#1F6B67"/>
+                <circle cx="120" cy="35" r="3" fill="#1F6B67"/>
+                <circle cx="150" cy="40" r="3" fill="#1F6B67"/>
+                <circle cx="175" cy="25" r="3" fill="#1F6B67"/>
+                <circle cx="205" cy="20" r="3" fill="#1F6B67"/>
+                <circle cx="230" cy="15" r="3" fill="#E2A63B"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-24 border-t border-line">
+        <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+                <h2 class="text-2xl font-semibold mb-6">Sobre</h2>
+                <div class="space-y-5 text-muted leading-relaxed max-w-md">
+                    <p>Curso o 6º semestre de Engenharia de Software na UnB. Sou monitor de Cálculo 1, Estrutura de Dados e Fundamentos de Arquitetura — ensinar essas disciplinas foi onde percebi que consigo traduzir ideias complexas em algo simples.</p>
+                    <p>Meu interesse está na fronteira entre engenharia clássica e ciência de dados: modelar um banco relacional, otimizar uma query em SQL ou implementar um algoritmo de grafo direto em C são as raízes que tornam um modelo de dados confiável, não só preciso.</p>
+                    <p>Tenho certificação <em>Foundations of Business Intelligence</em> pelo Google e contribuo com o KDE Kdenlive (C++). Procuro um estágio para colocar modelos em produção, desenhar dashboards e escalar decisões orientadas a dados.</p>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="data-label text-xs text-muted mb-2">Formação</h3>
+                    <p class="font-medium">Engenharia de Software</p>
+                    <p class="text-sm text-muted">Universidade de Brasília (UnB) — conclusão prevista em 2028</p>
+                </div>
+                <div>
+                    <h3 class="data-label text-xs text-muted mb-2">Interesses</h3>
+                    <ul class="space-y-2 text-muted text-sm">
+                        <li class="tick">Machine Learning & IA aplicada (Google Gemini API)</li>
+                        <li class="tick">Algoritmos de grafos em C/C++</li>
+                        <li class="tick">Computação quântica (acompanhamento IEEE)</li>
+                        <li class="tick">Engenharia de dados & CI/CD</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="py-24 border-t border-line">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-semibold mb-2">Habilidades técnicas</h2>
+            <p class="text-muted mb-12 max-w-md">Ciência de dados é o destino; o resto é o que garante que o caminho até lá seja sólido.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-line border border-line">
+                <div class="bg-paper p-8 md:col-span-2 border-t-2 border-signal">
+                    <h3 class="font-semibold text-lg mb-4">Dados & BI</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">SQL (MySQL/MariaDB)</span>
+                        <span class="skill-tag">Tuning de consultas</span>
+                        <span class="skill-tag">Modelagem ER</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+                <div class="bg-paper p-8 border-t-2 border-graph">
+                    <h3 class="font-medium text-base mb-4 text-muted">Fundamentos</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag-sm">C / C++</span>
+                        <span class="skill-tag-sm">Java</span>
+                        <span class="skill-tag-sm">Node.js</span>
+                        <span class="skill-tag-sm">Grafos (BFS, DFS)</span>
+                        <span class="skill-tag-sm">Jest</span>
+                    </div>
+                </div>
+                <div class="bg-paper p-8 border-t-2 border-graph md:col-span-3">
+                    <h3 class="font-medium text-base mb-4 text-muted">DevOps & cultura</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag-sm">Git / GitHub</span>
+                        <span class="skill-tag-sm">Open Source (KDE)</span>
+                        <span class="skill-tag-sm">CI/CD (GitHub Actions)</span>
+                        <span class="skill-tag-sm">Docker / K8s</span>
+                        <span class="skill-tag-sm">UX / Usabilidade</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-24 border-t border-line">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-2xl font-semibold mb-2">Projetos</h2>
+            <p class="text-muted mb-12 max-w-md">Primeiro os que resolvem problemas com dados. Depois, a engenharia que torna isso possível.</p>
+
+            <h3 class="data-label text-xs text-graph mb-6">Ciência de dados & analytics</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+                <article class="border border-line border-t-2 border-t-signal p-6 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-semibold text-lg">Classificação de Exoplanetas</h4>
+                        <a href="https://github.com/davirnunes/Exoplanetas" target="_blank" class="text-muted hover:text-ink" aria-label="Ver repositório no GitHub"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed mb-4 flex-1">Modelo de Random Forest (Scikit-Learn) para prever habitabilidade de exoplanetas, em uma simulação inspirada nos dados do telescópio Kepler — temperatura, massa estelar e distância orbital como variáveis.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="skill-tag-sm">Python</span>
+                        <span class="skill-tag-sm">Random Forest</span>
+                        <span class="skill-tag-sm">Astronomia</span>
+                    </div>
+                </article>
+                <article class="border border-line border-t-2 border-t-signal p-6 flex flex-col">
+                    <div class="flex justify-between items-start mb-3">
+                        <h4 class="font-semibold text-lg">Credit Scoring (Risco)</h4>
+                        <a href="https://github.com/davirnunes/Credit-Risk" target="_blank" class="text-muted hover:text-ink" aria-label="Ver repositório no GitHub"><i class="fab fa-github text-lg"></i></a>
+                    </div>
+                    <p class="text-muted text-sm leading-relaxed mb-4 flex-1">Regressão logística voltada à interpretabilidade, para classificar risco de inadimplência de clientes bancários a partir de DTI e histórico de crédito.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="skill-tag-sm">Python</span>
+                        <span class="skill-tag-sm">Regressão logística</span>
+                        <span class="skill-tag-sm">Finanças</span>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="data-label text-xs text-muted mb-6">Fundamentos de engenharia</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <article class="border border-line border-t-2 border-t-graph p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-medium text-sm">Econometria em C</h4>
+                        <a href="https://github.com/davirnunes/-Elasticidade-Pre-o-da-Demanda-em-C" target="_blank" class="text-muted hover:text-ink" aria-label="Ver repositório no GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-muted text-xs leading-relaxed">Regressão OLS implementada em C puro para calcular elasticidade-preço da demanda de um e-commerce.</p>
+                </article>
+                <article class="border border-line border-t-2 border-t-graph p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-medium text-sm">Interpretador de Linguagem</h4>
+                        <a href="https://github.com/davirnunes/interpretador-G16" target="_blank" class="text-muted hover:text-ink" aria-label="Ver repositório no GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-muted text-xs leading-relaxed">Interpretador construído em grupo para Compiladores 1 — da análise léxica à execução. É a mesma lógica por trás de escrever um parser de query ou um motor de regras para pipelines de dados.</p>
+                </article>
+                <article class="border border-line border-t-2 border-t-graph p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-medium text-sm">KDE Kdenlive</h4>
+                        <a href="https://invent.kde.org/multimedia/kdenlive/-/work_items/2172" target="_blank" class="text-muted hover:text-ink" aria-label="Ver issue no GitLab do KDE"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <p class="text-muted text-xs leading-relaxed">Correção de bug de drag-and-drop no gerenciador de projetos (BUG 508117), revisada pela comunidade KDE.</p>
+                </article>
+                <article class="border border-line border-t-2 border-t-graph p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-medium text-sm">Pipeline CI/CD</h4>
+                        <a href="https://github.com/davirnunes/GCES-Kdenlive-relatorios" target="_blank" class="text-muted hover:text-ink" aria-label="Ver repositório no GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-muted text-xs leading-relaxed">Pipeline de 10 fases: SCA/SAST via SonarCloud e containerização multi-stage com Docker e Kubernetes.</p>
+                </article>
+            </div>
+
+            <div class="mt-16">
+                <a href="https://github.com/davirnunes" target="_blank" class="text-sm font-medium underline decoration-line underline-offset-4 hover:decoration-ink">Ver todos os repositórios no GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-24 bg-ink text-paper">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Vamos conversar?</h2>
+            <p class="text-paper/70 mb-10 max-w-xl mx-auto leading-relaxed">Estou buscando um estágio em Dados — otimizar queries em SQL, modelar aprendizado de máquina ou usar minhas raízes em C/C++ para gerar impacto real.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                <a href="mailto:davir.nunes2019@gmail.com" class="flex items-center justify-center gap-3 bg-paper text-ink px-6 py-3 text-sm font-medium hover:bg-signal transition-colors">
+                    <i class="fas fa-envelope"></i> davir.nunes2019@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/davi-r-8717101b6" target="_blank" class="flex items-center justify-center gap-3 border border-paper/30 px-6 py-3 text-sm font-medium hover:border-paper transition-colors">
+                    <i class="fab fa-linkedin"></i> Conectar no LinkedIn
+                </a>
+            </div>
+            <a href="https://github.com/davirnunes" target="_blank" class="text-paper/60 hover:text-paper transition-colors" aria-label="GitHub de Davi Nunes">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-ink text-center py-6 border-t border-white/10">
+        <p class="text-paper/40 text-xs data-label">© 2026 Davi Rodrigues Nunes</p>
+    </footer>
+
+</body>
+</html>
